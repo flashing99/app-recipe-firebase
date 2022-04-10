@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEF 2022</title>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+    <script src="./firebase.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="messages">
+        /. ---- ./
+    </div>
+
+
+    <div class="btn-container">
+        <div class="card ">
+
+            <button type="button" class="btn" id="add-data-btn" onclick=" "> Add a new recipe </button>
+
+        </div>
+    </div>
+
+
+    <div class="cards-grid">
+
+        <div class="card">
+            <div class="top-img skeleton-anim"></div>
+            <div class="content">
+                <h3 class="skeleton-title skeleton-anim"></h3>
+                <p class="skeleton-text skeleton-anim"></p>
+                <p class="skeleton-text skeleton-anim"></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="top-img skeleton-anim"></div>
+            <div class="content">
+                <h3 class="skeleton-title skeleton-anim"></h3>
+                <p class="skeleton-text skeleton-anim"></p>
+                <p class="skeleton-text skeleton-anim"></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="top-img skeleton-anim"></div>
+            <div class="content">
+                <h3 class="skeleton-title skeleton-anim"></h3>
+                <p class="skeleton-text skeleton-anim"></p>
+                <p class="skeleton-text skeleton-anim"></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="top-img skeleton-anim"></div>
+            <div class="content">
+                <h3 class="skeleton-title skeleton-anim"></h3>
+                <p class="skeleton-text skeleton-anim"></p>
+                <p class="skeleton-text skeleton-anim"></p>
+            </div>
+        </div>
+        <!--
+        <div class="card">
+            <div class="top-img skeleton-anim"></div>
+            <div class="content">
+                <h3 class="skeleton-title skeleton-anim"></h3>
+                <p class="skeleton-text skeleton-anim"></p>
+                <p class="skeleton-text skeleton-anim"></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="top-img skeleton-anim"></div>
+            <div class="content">
+                <h3 class="skeleton-title skeleton-anim"></h3>
+                <p class="skeleton-text skeleton-anim"></p>
+                <p class="skeleton-text skeleton-anim"></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="top-img skeleton-anim"></div>
+            <div class="content">
+                <h3 class="skeleton-title skeleton-anim"></h3>
+                <p class="skeleton-text skeleton-anim"></p>
+                <p class="skeleton-text skeleton-anim"></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="top-img skeleton-anim"></div>
+            <div class="content">
+                <h3 class="skeleton-title skeleton-anim"></h3>
+                <p class="skeleton-text skeleton-anim"></p>
+                <p class="skeleton-text skeleton-anim"></p>
+            </div>
+        </div> -->
+    </div>
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyC7Mw6dioXwQzgCyVkaIqkHgQhPrff0ldM",
+            authDomain: "recette2022-4e5e5.firebaseapp.com",
+            projectId: "recette2022-4e5e5",
+            storageBucket: "recette2022-4e5e5.appspot.com",
+            messagingSenderId: "540024359694",
+            appId: "1:540024359694:web:88186979e8f3190d8de55f"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
